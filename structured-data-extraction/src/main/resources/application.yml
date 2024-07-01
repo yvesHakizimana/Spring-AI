@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: structured-data-extraction
+  ai:
+    ollama:
+      chat:
+        options:
+          model: mistral
