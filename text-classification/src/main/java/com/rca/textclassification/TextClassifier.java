@@ -82,9 +82,4 @@ public class TextClassifier {
                 .call()
                 .content();
     }
-
-
-
-
-
 }
