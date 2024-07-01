@@ -20,7 +20,7 @@ public class ClassificationController {
     }
 
     @PostMapping("/classify/class-descriptions")
-    String classifyClassDescriptions(String text){
+    String classifyClassDescriptions(@RequestBody  String text){
         return textClassifier.classifyClassDescriptions(text);
     }
 
