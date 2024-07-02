@@ -32,6 +32,7 @@ public class IngestionPipeline {
                 new InstrumentNote("The resonant strings of the violin draw out a sense of passionate longing and dramatic intensity.")
         );
 
+        //Creation of fake data to use in semantic search and store as embedding or as vectors in other words.
         logger.info("Creating instruments as notes.");
         List<Document> documents = instrumentNotes.stream()
                 .map(note -> new Document(note.content()))
