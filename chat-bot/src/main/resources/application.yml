@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: chat-bot
+  ai:
+    ollama:
+      chat:
+        options:
+          model: mistral
+server:
+  port: 8006
