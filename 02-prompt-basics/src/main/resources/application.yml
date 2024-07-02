@@ -1,0 +1,8 @@
+spring:
+  ai:
+    ollama:
+      chat:
+        options:
+          model: mistral
+server:
+  port: 8007
