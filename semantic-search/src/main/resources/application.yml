@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: semantic-search
+  ai:
+    ollama:
+      chat:
+        options:
+          model: mistral
