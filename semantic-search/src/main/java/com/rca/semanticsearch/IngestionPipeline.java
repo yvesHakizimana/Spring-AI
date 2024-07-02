@@ -1,16 +1,17 @@
 package com.rca.semanticsearch;
 
+import jakarta.annotation.PostConstruct;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.logging.Logger;
 
 @Component
 public class IngestionPipeline {
-    private static final Logger logger = (Logger) LoggerFactory.getLogger(IngestionPipeline.class);
+    private static final Logger logger = LoggerFactory.getLogger(IngestionPipeline.class);
 
     private final VectorStore vectorStore;
 
@@ -18,6 +19,7 @@ public class IngestionPipeline {
         this.vectorStore = vectorStore;
     }
 
+    @PostConstruct
     public void run(){
         var instrumentNotes = List.of(
                 new InstrumentNote("The haunting sound of the cello evokes a deep sense of melancholy and introspection."),
