@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: 04.1-embedding-models-ollama
+  ai:
+    ollama:
+      chat:
+        options:
+          model: mistral
